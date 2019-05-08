@@ -1,7 +1,27 @@
 <template>
-  <div class="home">
-    <img class="logo" alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to WWs Dashboard App"/>
+  <div id="home">
+
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-toggle>
+            <ion-button>
+              <ion-icon slot="icon-only" name="menu"></ion-icon>
+            </ion-button>
+          </ion-menu-toggle>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-card class="welcome-card">
+        <ion-card-content>
+          <img class="logo" alt="Vue logo" src="../assets/logo.png">
+        </ion-card-content>
+        <HelloWorld msg="Welcome to WWs Dashboard"/>
+      </ion-card>
+    </ion-content>
+
   </div>
 </template>
 
@@ -18,8 +38,15 @@ export default {
 </script>
 
 <style scoped>
+
+  .welcome-card ion-img {
+    max-height: 35vh;
+    overflow: hidden;
+  }
+
   .logo {
-    margin: 20px; 
+    margin: auto; 
     background: #0e0e0e;
+    width: 500px;
   }
 </style>

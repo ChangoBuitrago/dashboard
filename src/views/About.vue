@@ -1,7 +1,23 @@
 <template>
-  <div class="about">
-    <h1>This is a Consumption chart</h1>
-    <Consumption />
+  <div id="about">
+
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-toggle>
+            <ion-button>
+              <ion-icon slot="icon-only" name="menu"></ion-icon>
+            </ion-button>
+          </ion-menu-toggle>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="ion-padding">
+      <h1>Consumption chart</h1>
+      <Consumption />
+    </ion-content>
+
   </div>
 </template>
 
@@ -13,6 +29,11 @@ export default {
   name: 'about',
   components: {
     Consumption
+  },
+  methods: {
+    gotoPath(_path){
+      this.$router.push({path: _path})
+    }
   }
 }
 </script>

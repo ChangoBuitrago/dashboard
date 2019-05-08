@@ -1,7 +1,26 @@
 <template>
-  <div class="sites">
-    <h1>Site List</h1>
-    <SiteList />
+  <div id="sites">
+
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-toggle>
+            <ion-button>
+              <ion-icon slot="icon-only" name="menu"></ion-icon>
+            </ion-button>
+          </ion-menu-toggle>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <SiteList />
+
+      <ion-fab-button class="todo-fab">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-content>
+  
   </div>
 </template>
 
@@ -16,3 +35,14 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+  .todo-fab {
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+    font-size: 30px;
+  }
+
+</style>

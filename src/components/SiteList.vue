@@ -1,17 +1,9 @@
 <template>
-  <ul>
-    <li
-      v-for="site in sites"
-      :key="site.id">
+  <ion-list>
+    <ion-item v-for="site in sites" :key="site.id">
       {{ site.title }}
-      <br>
-      <button
-        :disabled="!site.inventory"
-        @click="addSiteToCart(site)">
-        Add to cart
-      </button>
-    </li>
-  </ul>
+    </ion-item>
+  </ion-list>
 </template>
 
 <script>
