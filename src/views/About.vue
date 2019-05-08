@@ -1,18 +1,18 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
-    <Amchart />
+    <h1>This is a Consumption chart</h1>
+    <Consumption />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Amchart from '@/components/Amchart.vue'
+import Consumption from '@/components/Consumption.vue'
 
 export default {
   name: 'about',
   components: {
-    Amchart
+    Consumption
   }
 }
 </script>

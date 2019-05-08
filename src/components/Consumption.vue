@@ -12,7 +12,7 @@ am4core.useTheme(am4themes_animated);
 
 
 export default {
-  name: 'Amchart',
+  name: 'Consumption',
   mounted() {
     let chart = am4core.create(this.$refs.chartdiv, am4charts.XYChart);
 
