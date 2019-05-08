@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # dashboard
 
 ## Project setup
@@ -27,3 +28,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# WWs Dashboard
+>>>>>>> 3150cb5b45940f370c4cd291235281b22b9313e0
