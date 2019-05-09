@@ -15,19 +15,19 @@
             <ion-list>
               <ion-menu-toggle auto-hide="false">
                 <ion-item button @click="gotoPath('/home')" routerDirection="root">
-                  <ion-icon slot="start" name='home'></ion-icon>
+                  <font-awesome-icon slot="start" icon="home" class="fa-fw"/>
                   <ion-label>
                     Home
                   </ion-label>
                 </ion-item>
                 <ion-item button @click="gotoPath('/about')" routerDirection="root">
-                  <ion-icon slot="start" name='bicycle'></ion-icon>
+                  <font-awesome-icon slot="start" icon="bicycle" class="fa-fw"/>
                   <ion-label>
                     About
                   </ion-label>
                 </ion-item>
                 <ion-item button @click="gotoPath('/sites')" routerDirection="root">
-                  <ion-icon slot="start" name='bug'></ion-icon>
+                  <font-awesome-icon slot="start" icon="building" class="fa-fw"/>
                   <ion-label>
                     Sites
                   </ion-label>
