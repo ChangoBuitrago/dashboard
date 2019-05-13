@@ -18,7 +18,7 @@
         <ion-card-content>
           <img class="logo" alt="Vue logo" src="../assets/logo.png">
         </ion-card-content>
-        <HelloWorld msg="Welcome to WWs Dashboard"/>
+        <HelloWorld :msg="locale.welcome" />
       </ion-card>
     </ion-content>
 
@@ -33,7 +33,14 @@ export default {
   name: 'home',
   components: {
     HelloWorld
-  }
+  },
+  computed: {
+    locale() {
+      return {
+        welcome: this.$t('home.welcome')
+      }
+    }
+  },
 }
 </script>
 

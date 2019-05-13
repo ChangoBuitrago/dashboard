@@ -19,16 +19,23 @@ export default new IonicVueRouter({
       component: Home
     },
     {
+      path: '/sites',
+      name: 'sites',
+      // lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "sites" */ './views/Sites.vue')
+    },
+    {
+      path: '/consumption',
+      name: 'consumption',
+      // lazy-loaded when the route is visited.
+      component: () => import(/* webpackChunkName: "sites" */ './views/Consumption.vue')
+    },
+    {
       path: '/about',
       name: 'about',
       // lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     },
-    {
-      path: '/sites',
-      name: 'sites',
-      // lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "sites" */ './views/Sites.vue')
-    }
+
   ]
 })

@@ -1,0 +1,13 @@
+{
+  "home": {
+    "welcome": "Welcome to WWs Dashboard"
+  },
+  "app": {
+    "sidemenu": {
+      "home": "Home",
+      "sites": "Sites",
+      "consumption": "Consumption",
+      "about": "About"
+    }
+  }
+}
