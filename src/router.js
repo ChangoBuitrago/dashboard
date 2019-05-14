@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Home from './views/Home.vue'
+import Site from './views/Site.vue'
 import { IonicVueRouter } from '@ionic/vue';
 
 Vue.use(IonicVueRouter);
@@ -20,11 +21,33 @@ export default new IonicVueRouter({
       // lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "sites" */ './views/Sites.vue')
     },
+    { 
+      path: '/sites/:id', 
+      component: Site,
+      children: [
+        {
+          path: '',
+          redirect: '/sites'
+        },
+        {
+          path: 'consumption',
+          component: () => import('./views/Consumption.vue')
+        },
+        {
+          path: 'circuits',
+          component: () => import('./views/Circuits.vue')
+        },
+        {
+          path: 'switches',
+          component: () => import('./views/Switches.vue')
+        }
+      ]
+    },
     {
-      path: '/consumption',
-      name: 'consumption',
+      path: '/settings',
+      name: 'settings',
       // lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "consumption" */ './views/Consumption.vue')
+      component: () => import(/* webpackChunkName: "about" */ './views/Settings.vue')
     },
     {
       path: '/about',

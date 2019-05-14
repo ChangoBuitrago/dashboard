@@ -7,7 +7,6 @@
         <ion-menu>
           <ion-header>
             <ion-toolbar color="primary">
-              <ion-title>Menu</ion-title>
             </ion-toolbar>
           </ion-header>
 
@@ -37,10 +36,10 @@
                     {{locale.sites}}
                   </ion-label>
                 </ion-item>
-                <ion-item button @click="gotoPath('/consumption')" routerDirection="root">
-                  <font-awesome-icon slot="start" icon="bolt" class="fa-fw"/>
+                <ion-item button @click="gotoPath('/settings')" routerDirection="root">
+                  <font-awesome-icon slot="start" icon="cog" class="fa-fw"/>
                   <ion-label>
-                    {{locale.consumption}}
+                    {{locale.settings}}
                   </ion-label>
                 </ion-item>
                 <ion-item button @click="gotoPath('/about')" routerDirection="root">
@@ -72,6 +71,7 @@ export default {
         home: this.$t('app.sidemenu.home'),
         sites: this.$t('app.sidemenu.sites'),
         consumption: this.$t('app.sidemenu.consumption'),
+        settings: this.$t('app.sidemenu.settings'),
         about: this.$t('app.sidemenu.about')
       }
     }

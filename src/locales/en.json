@@ -7,7 +7,16 @@
       "home": "Home",
       "sites": "Sites",
       "consumption": "Consumption",
+      "settings": "Settings",
       "about": "About"
+    },
+    "siteList": {
+      "siteItem" : {
+        "backButton": "@:app.sidemenu.sites",
+        "consumption": "Consumption",
+        "circuits": "Circuits",
+        "switches": "Switches"
+      }
     }
   }
 }

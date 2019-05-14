@@ -15,21 +15,27 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               <ion-row>
                 <ion-col>
-                  <ion-item href="https://ionicframework.com/docs/">
-                    <ion-icon slot="start" color="medium" name="book"></ion-icon>
-                    <ion-label>Ionic Documentation</ion-label>
+                  <ion-item button lines="none" @click="gotoPath(`/sites/${site.id}/consumption`)" routerDirection="root">
+                    <font-awesome-icon slot="start" icon="bolt" class="fa-fw"/>
+                    <ion-label>
+                      {{locale.consumption}}
+                    </ion-label>
                   </ion-item>
                 </ion-col>
                 <ion-col>
-                  <ion-item href="https://ionicframework.com/docs/building/scaffolding">
-                    <ion-icon slot="start" color="medium" name="build"></ion-icon>
-                    <ion-label>Scaffold Out Your App</ion-label>
+                  <ion-item button lines="none" @click="gotoPath(`/sites/${site.id}/circuits`)" routerDirection="root">
+                    <font-awesome-icon slot="start" icon="microchip" class="fa-fw"/>
+                    <ion-label>
+                      {{locale.circuits}}
+                    </ion-label>
                   </ion-item>
                 </ion-col>
                 <ion-col>
-                  <ion-item href="https://ionicframework.com/docs/layout/structure">
-                    <ion-icon slot="start" color="medium" name="grid"></ion-icon>
-                    <ion-label>Change Your App Layout</ion-label>
+                  <ion-item button lines="none" @click="gotoPath(`/sites/${site.id}/switches`)" routerDirection="root">
+                    <font-awesome-icon slot="start" icon="toggle-on" class="fa-fw"/>
+                    <ion-label>
+                      {{locale.switches}}
+                    </ion-label>
                   </ion-item>
                 </ion-col>
               </ion-row>
@@ -48,7 +54,21 @@
 
 export default {
   name: "SiteItem",
-  props: ['site']
+  props: ['site'],
+  computed: {
+    locale() {
+      return {
+        consumption: this.$t('app.siteList.siteItem.consumption'),
+        circuits: this.$t('app.siteList.siteItem.circuits'),
+        switches: this.$t('app.siteList.siteItem.switches')
+      }
+    }
+  },
+  methods: {
+    gotoPath(_path){
+      this.$router.push({path: _path})
+    }
+  }
 }
 </script>
 
