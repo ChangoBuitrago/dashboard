@@ -11,10 +11,6 @@ export default new IonicVueRouter({
   routes: [
     {
       path: '/',
-      redirect: '/home',
-    },
-    {
-      path: '/home',
       name: 'home',
       component: Home
     },
@@ -28,7 +24,7 @@ export default new IonicVueRouter({
       path: '/consumption',
       name: 'consumption',
       // lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "sites" */ './views/Consumption.vue')
+      component: () => import(/* webpackChunkName: "consumption" */ './views/Consumption.vue')
     },
     {
       path: '/about',

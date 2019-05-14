@@ -25,7 +25,7 @@
             
             <ion-list>
               <ion-menu-toggle auto-hide="false">
-                <ion-item button @click="gotoPath('/home')" routerDirection="root">
+                <ion-item button @click="gotoPath('/')" routerDirection="root">
                   <font-awesome-icon slot="start" icon="home" class="fa-fw"/>
                   <ion-label>
                     {{locale.home}}
@@ -53,7 +53,7 @@
             </ion-list>
           </ion-content>
         </ion-menu>
-
+        
         <ion-vue-router main/>
 
       </ion-split-pane>
