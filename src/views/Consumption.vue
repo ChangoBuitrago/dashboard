@@ -3,7 +3,7 @@
     
     <ion-content class="ion-padding">
       <ion-text>
-        <h1>Consumption chart</h1>
+        <h1>Consumption</h1>
       </ion-text>
 
       <Chart />

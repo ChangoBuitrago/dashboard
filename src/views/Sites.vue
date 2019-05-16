@@ -10,6 +10,7 @@
             </ion-button>
           </ion-menu-toggle>
         </ion-buttons>
+        <ion-title>{{ locale.title }}</ion-title>
       </ion-toolbar>
     </ion-header>
 
@@ -32,6 +33,13 @@ export default {
   name: 'sites',
   components: {
     SiteList
+  },
+  computed: {
+    locale() {
+      return {
+        title: this.$t('app.siteList.title')
+      }
+    }
   }
 }
 </script>

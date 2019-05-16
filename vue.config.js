@@ -6,5 +6,9 @@ module.exports = {
       localeDir: 'locales',
       enableInSFC: true
     }
-  }
+  },
+
+  outputDir: 'cordova_app/www',
+  assetsDir: 'assets',
+  productionSourceMap: false
 }

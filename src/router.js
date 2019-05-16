@@ -18,7 +18,6 @@ export default new IonicVueRouter({
     {
       path: '/sites',
       name: 'sites',
-      // lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "sites" */ './views/Sites.vue')
     },
     { 
@@ -46,13 +45,11 @@ export default new IonicVueRouter({
     {
       path: '/settings',
       name: 'settings',
-      // lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/Settings.vue')
+      component: () => import(/* webpackChunkName: "settings" */ './views/Settings.vue')
     },
     {
       path: '/about',
       name: 'about',
-      // lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     },
 

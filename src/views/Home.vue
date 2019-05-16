@@ -10,50 +10,34 @@
             </ion-button>
           </ion-menu-toggle>
         </ion-buttons>
+        <ion-title>{{ locale.title }}</ion-title>
       </ion-toolbar>
     </ion-header>
 
-    <ion-content>
-      <ion-card class="welcome-card">
-        <ion-card-content>
-          <img class="logo" alt="Vue logo" src="../assets/logo.png">
-        </ion-card-content>
-        <HelloWorld :msg="locale.welcome" />
-      </ion-card>
+    <ion-content class="ion-padding">
+      <ion-text class="ion-text-center">
+        <h1>{{ locale.welcome }}</h1>
+        <p>
+          Wattwatchers behind-the-meter energy management technology is connected,<br>
+          easy to install, intelligent, and cost-effective.
+        </p>
+      </ion-text>
     </ion-content>
 
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  },
+  name: 'Home',
   computed: {
     locale() {
       return {
-        welcome: this.$t('home.welcome')
+        title: this.$t('app.home.title'),
+        welcome: this.$t('app.home.welcome')
       }
     }
-  },
+  }
 }
 </script>
-
-<style scoped>
-
-  .welcome-card ion-img {
-    max-height: 35vh;
-    overflow: hidden;
-  }
-
-  .logo {
-    margin: auto; 
-    background: #0e0e0e;
-    width: 500px;
-  }
-</style>

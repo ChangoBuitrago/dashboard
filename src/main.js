@@ -7,11 +7,11 @@ import Ionic from '@ionic/vue';
 import '@ionic/core/css/ionic.bundle.css';
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faBuilding, faHome, faBolt, faInfoCircle, faCog, faMicrochip, faToggleOn } from '@fortawesome/free-solid-svg-icons'
+import { faBuilding, faHome, faTachometerAlt, faBolt, faInfoCircle, faCog, faMicrochip, faToggleOn, faBookmark, faStopwatch, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import i18n from './i18n'
 
-library.add(faBuilding, faHome, faBolt, faInfoCircle, faCog, faMicrochip, faToggleOn )
+library.add(faBuilding, faHome, faTachometerAlt, faBolt, faInfoCircle, faCog, faMicrochip, faToggleOn, faBookmark, faStopwatch, faChevronLeft )
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.use(Ionic);

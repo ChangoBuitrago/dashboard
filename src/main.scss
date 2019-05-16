@@ -1,0 +1,21 @@
+:root {
+  --ion-color-primary: #193d52;
+  --ion-color-primary-rgb: 25,61,82;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255,255,255;
+  --ion-color-primary-shade: #163648;
+  --ion-color-primary-tint: #305063;
+
+  --ion-color-secondary: #ee7622;
+  --ion-color-secondary-rgb: 238,118,34;
+  --ion-color-secondary-contrast: #000000;
+  --ion-color-secondary-contrast-rgb: 0,0,0;
+  --ion-color-secondary-shade: #d1681e;
+  --ion-color-secondary-tint: #f08438;
+}
+
+.fullScreenModal .modal-wrapper {
+  --height: 100%;
+  --width: 100%;
+  --border-radius: 0;
+}

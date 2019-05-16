@@ -1,22 +1,51 @@
 {
-  "home": {
-    "welcome": "Bienvenido al WWs Dashboard"
-  },
   "app": {
-    "sidemenu": {
+    "sideMenu": {
       "home": "Principal",
+      "dashboard": "Tablero",
+      "realTime": "Tiempo Real",
       "sites": "Sitios",
+      "bookmarks": "Guardados",
       "consumption": "Consumo",
-      "settings": "Configuración",
+      "settings": "Configuración y Privacidad",
+      "helpCenter": "Centro de Ayuda",
       "about": "Acerca de"
     },
+    "home": {
+      "title": "@:app.sideMenu.home",
+      "welcome": "Bienvenido al WWs Dashboard"
+    },
+    "dashboard": {
+      "title": "@:app.sideMenu.dashboard"
+    },
+    "realTime": {
+      "title": "@:app.sideMenu.realTime"
+    },
     "siteList": {
+      "title": "@:app.sideMenu.sites",
       "siteItem" : {
-        "backButton": "@:app.sidemenu.sites",
+        "backButton": "@:app.sideMenu.sites",
         "consumption": "Consumo",
         "circuits": "Circuitos",
         "switches": "Interruptores"
       }
+    },
+    "settings": {
+      "title": "@:app.sideMenu.settings",
+      "wattwatchers" : {
+        "voltage": "Voltaje",
+        "hertz" : "Hercio"
+      },
+      "general": {
+        "country" : "Pais",
+        "language" : "Lenguaje",
+        "notifications" : "Notificaciones",
+        "about": {
+          "title": "Acerca de",
+          "description" : "Su mydata.energy Dashboard permite visualizar la información generada por sus dispositivos Wattwatchers. <br><br> Se encuentra optimizado para residentes que posean generacioón solar instalada, pero sin embargo un gran número de residentes y clientes comerciales también lo utilizacn al margen que no poseen generacioón."
+        }
+      }
     }
   }
 }
+
