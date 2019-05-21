@@ -12,6 +12,9 @@
   --ion-color-secondary-contrast-rgb: 0,0,0;
   --ion-color-secondary-shade: #d1681e;
   --ion-color-secondary-tint: #f08438;
+
+  --ion-tabbar-text-color-active: var(--ion-color-secondary);
+  --ion-tabbar-text-color: var(--ion-color-secondary-contrast);
 }
 
 .fullScreenModal .modal-wrapper {

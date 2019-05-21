@@ -16,9 +16,14 @@ export default new IonicVueRouter({
       component: Home
     },
     {
-      path: '/sites',
-      name: 'sites',
-      component: () => import(/* webpackChunkName: "sites" */ './views/Sites.vue')
+      path: '/sitesview',
+      name: 'sitesView',
+      component: () => import('./views/SitesView.vue')
+    },
+    {
+      path: '/dashboard',
+      name: 'Dashboard',
+      component: () => import('./views/Dashboard.vue')
     },
     { 
       path: '/sites/:id', 

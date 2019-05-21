@@ -14,30 +14,99 @@
       </ion-toolbar>
     </ion-header>
 
-    <ion-content class="ion-padding">
-      <ion-text class="ion-text-center">
-        <h1>{{ locale.welcome }}</h1>
-        <p>
-          Wattwatchers behind-the-meter energy management technology is connected,<br>
-          easy to install, intelligent, and cost-effective.
-        </p>
-      </ion-text>
+    <ion-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12">
+            <ion-searchbar></ion-searchbar>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="ion-padding">
+          <ion-col size="12" size-lg>
+            <ion-label>
+              What does your consumption look like?
+            </ion-label>
+            <ion-card>
+              <ion-card-content>
+                <Chart />
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+
+          <!-- <ion-col size="12" size-lg="4">
+            <ion-label>
+              Real time Report
+            </ion-label>
+            <ion-card>
+              <ion-card-content>
+
+              </ion-card-content>
+            </ion-card>
+          </ion-col> -->
+        </ion-row>
+
+        <ion-row class="ion-padding">
+          <ion-col size="12" size-lg>
+            <ion-label>
+              What are your top 3 Circuits?
+            </ion-label>
+            <ion-card>
+              <ion-card-content>
+                
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="ion-padding">
+          <ion-col size="12" size-lg>
+            <ion-label>
+              Which switches are Active now?
+            </ion-label>
+            <ion-card>
+              <ion-card-content>
+                
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+
     </ion-content>
 
   </div>
 </template>
 
 <script>
+import Chart from '@/components/Chart.vue'
 
 export default {
   name: 'Home',
+  components: {
+    Chart
+  },
   computed: {
     locale() {
       return {
-        title: this.$t('app.home.title'),
-        welcome: this.$t('app.home.welcome')
+        title: this.$t('app.home.title')
       }
     }
   }
 }
 </script>
+
+<style lang="scss" scoped>
+
+  ion-card {
+    min-height: 400px;
+    border-radius: 0;
+    margin: none;
+  }
+
+  ion-label {
+    font: 300 18px/14px 'Roboto',sans-serif;
+  }
+
+</style>

@@ -1,15 +1,18 @@
 {
   "app": {
     "sideMenu": {
+      "sites": "Sitios",
       "home": "Principal",
       "dashboard": "Tablero",
       "realTime": "Tiempo Real",
-      "sites": "Sitios",
       "bookmarks": "Guardados",
       "consumption": "Consumo",
       "settings": "Configuración y Privacidad",
       "helpCenter": "Centro de Ayuda",
       "about": "Acerca de"
+    },
+    "sites": {
+      "title": "@:app.sideMenu.sites"
     },
     "home": {
       "title": "@:app.sideMenu.home",

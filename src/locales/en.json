@@ -1,15 +1,18 @@
 {
   "app": {
     "sideMenu": {
+      "sites": "Sites",
       "home": "Home",
       "dashboard": "Dashboard",
       "realTime": "Real Time",
-      "sites": "Sites",
       "bookmarks": "Bookmarks",
       "consumption": "Consumption",
       "settings": "Settings and Privacy",
       "helpCenter": "Help Center",
       "about": "About"
+    },
+    "sites": {
+      "title": "@:app.sideMenu.sites"
     },
     "home": {
       "title": "@:app.sideMenu.home",

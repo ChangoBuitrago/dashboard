@@ -4,7 +4,7 @@
     <ion-header>
       <ion-toolbar>
         <ion-title>{{ locale.title }}</ion-title>
-        <ion-button fill="clear" @click="gotoPath('/')" routerDirection="root">
+        <ion-button fill="clear" @click="hideModal" routerDirection="root">
           <font-awesome-icon slot="start" icon="chevron-left" class="fa-fw"/>
         </ion-button>
       </ion-toolbar>  
@@ -74,12 +74,6 @@
             <ion-label>{{ locale.notifications}}</ion-label>
             <ion-toggle checked></ion-toggle>
           </ion-item>
-                    
-          <ion-item button lines="none" @click="gotoPath('/about')" routerDirection="forward">
-            <ion-label>
-              {{locale.about}}
-            </ion-label>
-          </ion-item>
 
         </ion-item-group>
       </ion-list>
@@ -92,16 +86,6 @@
 <script>
   export default {
     name: 'settings',
-    props: [
-      'i18n',
-      'title',
-      'voltage',
-      'hertz',
-      'country',
-      'language',
-      'notifications',
-      'about'
-    ],
     data () {
       return { 
         selectedLanguage: 'en',
@@ -111,24 +95,24 @@
     computed: {
       locale() {
         return {
-          title: this.title,
-          voltage: this.voltage,
-          hertz: this.hertz,
-          country: this.country,
-          language: this.language,
-          notifications: this.notifications,
-          about: this.about
+          title: this.$t('app.settings.title'),
+          voltage: this.$t('app.settings.wattwatchers.voltage'),
+          hertz: this.$t('app.settings.wattwatchers.hertz'),
+          country: this.$t('app.settings.general.country'),
+          language: this.$t('app.settings.general.language'),
+          notifications: this.$t('app.settings.general.notifications'),
+          about: this.$t('app.settings.general.about.title')
         }
       }
     },
     methods: {
-      gotoPath(_path){
+      hideModal(){
         this.$ionic.modalController.dismiss()
       },
       ionChange(value){
         this.selectedLanguage = value
 
-        this.i18n._vm.locale = value
+        this.$i18n._vm.locale = value
       }
     }
   }

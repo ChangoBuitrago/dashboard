@@ -37,7 +37,9 @@ export default {
     let series = chart.series.push(new am4charts.LineSeries());
     series.dataFields.dateX = "date";
     series.dataFields.valueY = "value";
-
+    
+    series.stroke = am4core.color("#193d52");
+    
     series.tooltipText = "{valueY.value}";
     chart.cursor = new am4charts.XYCursor();
 
@@ -60,6 +62,6 @@ export default {
 <style scoped>
 .hello {
   width: 100%;
-  height: 500px;
+  height: 400px;
 }
 </style>
