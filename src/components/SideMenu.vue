@@ -132,7 +132,6 @@ export default {
         showBackdrop: false
       });
       await modal.present()
-        .then(() => this.gotoPath("/all"))
     },
     showModalSettings: async function() {
       const modal = await this.$ionic.modalController.create({

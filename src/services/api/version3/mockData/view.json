@@ -1,0 +1,51 @@
+[
+  { 
+    "_id":0,
+    "name": "Master View",
+    "siteId": 0,
+    "favourite": true,
+    "recent": true
+  },
+  { 
+    "_id":1,
+    "name": "Test View",
+    "siteId": 0,
+    "favourite": false,
+    "recent": false
+  },
+  { 
+    "_id":2,
+    "name": "Raw Data View",
+    "siteId": 0,
+    "favourite": true,
+    "recent": true
+  },
+  { 
+    "_id":3,
+    "name": "Master view",
+    "siteId": 1,
+    "favourite": false,
+    "recent": false
+  },
+  { 
+    "_id":4,
+    "name": "Master view",
+    "siteId": 2,
+    "favourite": true,
+    "recent": false
+  },
+  { 
+    "_id":5,
+    "name": "Master view",
+    "siteId": 3,
+    "favourite": false,
+    "recent": false
+  },
+  { 
+    "_id":6,
+    "name": "Test view",
+    "siteId": 3,
+    "favourite": false,
+    "recent": false
+  }
+]

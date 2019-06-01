@@ -9,7 +9,7 @@
             <ion-img :src="site.url"></ion-img>
             <ion-card-header>
               <!-- <ion-card-subtitle>Get Started</ion-card-subtitle> -->
-              <ion-card-title>{{ site.title }}</ion-card-title>
+              <ion-card-title>{{ site }}</ion-card-title>
             </ion-card-header>
             <ion-card-content>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

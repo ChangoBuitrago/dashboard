@@ -33,7 +33,7 @@ export default {
   //   'addSiteToList'
   // ]),
   created () {
-    this.$store.dispatch('sites/getAllSites')
+    this.$store.dispatch('sites/getSiteList')
   }
 }
 </script>
