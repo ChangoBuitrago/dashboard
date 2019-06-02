@@ -12,7 +12,12 @@
       "about": "About"
     },
     "sites": {
-      "title": "@:app.sideMenu.sites"
+      "title": "Select View",
+      "segment": {
+        "recent": "recent",
+        "favourite": "favourite",
+        "all": "all"
+      }
     },
     "home": {
       "title": "@:app.sideMenu.home",

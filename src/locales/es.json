@@ -12,7 +12,12 @@
       "about": "Acerca de"
     },
     "sites": {
-      "title": "@:app.sideMenu.sites"
+      "title": "Seleccionar Vista",
+      "segment": {
+        "recent": "reciente",
+        "favourite": "favoritos",
+        "all": "todos"
+      }
     },
     "home": {
       "title": "@:app.sideMenu.home",

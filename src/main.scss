@@ -17,6 +17,16 @@
   --ion-tabbar-text-color: var(--ion-color-secondary-contrast);
 }
 
+.icon-color-primary {
+  color: var(--ion-color-primary);
+}
+.icon-color-secondary {
+  color: var(--ion-color-secondary);
+}
+.icon-color-light {
+  color: var(--ion-color-light);
+}
+
 .fullScreenModal .modal-wrapper {
   --height: 100%;
   --width: 100%;

@@ -2,21 +2,16 @@
   { 
     "_id":0,
     "name": "Wattwatchers HQ",
-    "description": "201/28 Chandos St, St Leonards"
+    "condensed": "201/28 Chandos St, St Leonards"
   },
   { 
     "_id":1,
     "name": "Carriageworks",
-    "description": "245 Wilson St, Eveleigh"
+    "condensed": "245 Wilson St, Eveleigh"
   },
   { 
     "_id":2,
-    "name": "Home",
-    "description": "25 Turimeta Street, Mona Vale"
-  },
-  { 
-    "_id":3,
-    "name": "Energylocals Office",
-    "description": "132 Cremorne Street, Richmond"
+    "name": "WWs Distribution Center",
+    "condensed": "25 Turimeta Street, Mona Vale"
   }
 ]

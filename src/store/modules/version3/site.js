@@ -1,4 +1,5 @@
 import api from '@/services/api/version3/endpoints/site'
+import i18n from '@/i18n'
 
 // initial state
 const state = {
@@ -7,12 +8,13 @@ const state = {
 
 // getters
 const getters = {
+  getHeaderTitle: () => i18n.t('app.sites.title'),
   getSiteList: (state) => state.sites,
 }
 
 // actions
 const actions = {
-  getSiteList ({ commit }) {
+  apiGetSiteList: ({ commit }) => {
     api.getSiteList(sites => {
       commit('setSites', sites)
     })
@@ -21,7 +23,7 @@ const actions = {
 
 // mutations
 const mutations = {
-  setSites (state, sites) {
+  setSites: (state, sites) => {
     state.sites = sites
   },
 }

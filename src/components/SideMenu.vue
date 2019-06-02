@@ -18,7 +18,7 @@
           <ion-card-title>Installer</ion-card-title>
         </ion-card-header>
 
-        <ion-item button lines="none" color="primary" @click="showModalSitesView" routerDirection="root">
+        <ion-item button lines="none" color="primary" @click="showModalSites" routerDirection="root">
           <font-awesome-icon slot="start" color="light" icon="building" class="fa-fw icon-color-secondary"/>
           <ion-label color="light">
             <!-- {{locale.sites}} -->
@@ -98,7 +98,7 @@
 </template>
 
 <script>
-import SitesView from "@/views/SitesView.vue";
+import Sites from "@/views/Sites.vue";
 import Settings from "@/views/Settings.vue";
 
 export default {
@@ -122,9 +122,9 @@ export default {
     gotoPath(_path){
       this.$router.push({path: _path}) 
     },
-    showModalSitesView: async function() {
+    showModalSites: async function() {
       const modal = await this.$ionic.modalController.create({
-        component: SitesView,
+        component: Sites,
         componentProps: {
           parent: this
         },
@@ -147,21 +147,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-
-  #sideMenu {
-
-    .icon-color-primary {
-      color: var(--ion-color-primary);
-    }
-    .icon-color-secondary {
-      color: var(--ion-color-secondary);
-    }
-    .icon-color-light {
-      color: var(--ion-color-light);
-    }
-
-  }
-
-</style>

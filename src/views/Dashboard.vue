@@ -50,9 +50,6 @@
 </template>
 
 <script>
-import SitesViewItem from '@/components/SitesViewItem.vue'
-import Chart from '@/components/Chart.vue'
-
 export default {
   name: 'Dashboard',
   computed: {

@@ -2,6 +2,7 @@
   { 
     "_id":0,
     "name": "Master View",
+    "condensed": "Condensed description about the facility view",
     "siteId": 0,
     "favourite": true,
     "recent": true
@@ -9,42 +10,80 @@
   { 
     "_id":1,
     "name": "Test View",
+    "condensed": "Condensed description about the facility view",
     "siteId": 0,
     "favourite": false,
     "recent": false
   },
   { 
     "_id":2,
-    "name": "Raw Data View",
+    "name": "Raw data View",
+    "condensed": "Condensed description about the facility view",
     "siteId": 0,
     "favourite": true,
-    "recent": true
+    "recent": false
   },
   { 
     "_id":3,
-    "name": "Master view",
+    "name": "Master View",
+    "condensed": "Condensed description about the facility view",
     "siteId": 1,
     "favourite": false,
     "recent": false
   },
   { 
     "_id":4,
-    "name": "Master view",
+    "name": "Test View",
+    "condensed": "Condensed description about the facility view",
+    "siteId": 1,
+    "favourite": false,
+    "recent": false
+  },  
+  { 
+    "_id":5,
+    "name": "Receiving View",
+    "condensed": "Condensed description about the facility view",
     "siteId": 2,
     "favourite": true,
     "recent": false
+  },  
+  { 
+    "_id":6,
+    "name": "Shipping View",
+    "condensed": "Condensed description about the facility view",
+    "siteId": 2,
+    "favourite": false,
+    "recent": false
+  },  
+  { 
+    "_id":7,
+    "name": "Product Line A View",
+    "condensed": "Condensed description about the facility view",
+    "siteId": 2,
+    "favourite": true,
+    "recent": true
   },
   { 
-    "_id":5,
-    "name": "Master view",
-    "siteId": 3,
+    "_id":8,
+    "name": "Product Line B View",
+    "condensed": "Condensed description about the facility view",
+    "siteId": 2,
     "favourite": false,
     "recent": false
   },
   { 
-    "_id":6,
-    "name": "Test view",
-    "siteId": 3,
+    "_id":9,
+    "name": "Admin/Operating Offices View",
+    "condensed": "Condensed description about the facility view",
+    "siteId": 2,
+    "favourite": false,
+    "recent": false
+  },
+  { 
+    "_id":10,
+    "name": "Support/Maintenance View",
+    "condensed": "Condensed description about the facility view",
+    "siteId": 2,
     "favourite": false,
     "recent": false
   }
