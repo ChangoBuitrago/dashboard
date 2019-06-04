@@ -22,21 +22,34 @@
           </ion-col>
         </ion-row>
 
-        <ion-row class="ion-padding">
+        <ion-row>
           <ion-col size="12" size-lg>
             <ion-label>
-              What does your consumption look like?
+              <h2 class="ion-padding-start ion-padding-top">What are your Top 3 Channels?</h2>
             </ion-label>
             <ion-card>
               <ion-card-content>
-                <Chart />
+                <PieChart />
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row>
+          <ion-col size="12" size-lg>
+            <ion-label>
+              <h2 class="ion-padding-start ion-padding-top">What does your Aggregated Consumption look like?</h2>
+            </ion-label>
+            <ion-card>
+              <ion-card-content>
+                <XYChart />
               </ion-card-content>
             </ion-card>
           </ion-col>
 
           <!-- <ion-col size="12" size-lg="4">
             <ion-label>
-              Real time Report
+              <h2 class="ion-padding-start ion-padding-top">>Real time Report</h2>
             </ion-label>
             <ion-card>
               <ion-card-content>
@@ -46,23 +59,23 @@
           </ion-col> -->
         </ion-row>
 
-        <ion-row class="ion-padding">
+        <ion-row>
           <ion-col size="12" size-lg>
             <ion-label>
-              What are your top 3 Circuits?
+              <h2 class="ion-padding-start ion-padding-top">Air Conditioning channel Live Data</h2>
             </ion-label>
             <ion-card>
               <ion-card-content>
-                
+                <LiveChart />
               </ion-card-content>
             </ion-card>
           </ion-col>
         </ion-row>
 
-        <ion-row class="ion-padding">
+        <ion-row>
           <ion-col size="12" size-lg>
             <ion-label>
-              Which switches are Active now?
+              <h2 class="ion-padding-start ion-padding-top">Which Switches are Active now?</h2>
             </ion-label>
             <ion-card>
               <ion-card-content>
@@ -80,12 +93,16 @@
 </template>
 
 <script>
-import Chart from '@/components/Chart.vue'
+import XYChart from '@/components/XYChart.vue'
+import PieChart from '@/components/PieChart.vue'
+import LiveChart from '@/components/LiveChart.vue'
 
 export default {
   name: 'Home',
   components: {
-    Chart
+    XYChart,
+    PieChart,
+    LiveChart
   },
   computed: {
     locale() {

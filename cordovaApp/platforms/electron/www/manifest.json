@@ -1,0 +1,13 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "orientation": "any",
+  "start_url": "index.html",
+  "name": "Dashboard",
+  "short_name": "Dashboard",
+  "version": "vuejs.cordova.dashboard",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "author": "Briefboards Team",
+  "icons": [],
+  "theme_color": "#313AA5"
+}

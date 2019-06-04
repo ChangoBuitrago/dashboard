@@ -1,0 +1,19 @@
+directories:
+  output: /Users/buitre/code/2019/WWs/dashboard/cordovaApp/platforms/electron/build
+  buildResources: /Users/buitre/code/2019/WWs/dashboard/cordovaApp/platforms/electron/build-res
+  app: /Users/buitre/code/2019/WWs/dashboard/cordovaApp/platforms/electron/www
+appId: vuejs.cordova.dashboard
+productName: Dashboard
+electronVersion: 4.0.1
+electronDownload:
+  version: 4.0.1
+mac:
+  type: distribution
+  icon: installer.png
+  target:
+    - target: dmg
+      arch:
+        - x64
+    - target: zip
+      arch:
+        - x64

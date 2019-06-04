@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-  
+
     <ion-app>
 
       <ion-split-pane>

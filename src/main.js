@@ -31,7 +31,7 @@ Vue.use(Ionic);
 
 Vue.config.productionTip = false
 
-const init = () => {
+const onDeviceReady = () => {
   new Vue({
     router,
     store,
@@ -41,11 +41,7 @@ const init = () => {
 }
 
 // Wait for the deviceready event to start the render
-document.addEventListener("deviceready", () => {
-  // eslint-disable-next-line
-  console.log("Ready, Render the App");
-  init();
-});
+document.addEventListener("deviceready", onDeviceReady, false)
 
 // If we are not in Cordova, manually trigger the deviceready event
 const isCordovaApp = (typeof window.cordova !== "undefined");

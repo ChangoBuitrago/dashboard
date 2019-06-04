@@ -28,9 +28,8 @@ module.exports = {
     }
   },
 
-  /* Using devServer proxy. */
-  publicPath: process.env.NODE_ENV === 'production' ? '/' : '/',
-  outputDir: 'cordova_app/www',
+  publicPath: process.env.BASE_URL,
+  outputDir: 'cordovaApp/www',
   assetsDir: 'assets',
-  productionSourceMap: false
+  productionSourceMap: true
 }
