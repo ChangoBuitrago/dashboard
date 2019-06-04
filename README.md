@@ -3,6 +3,9 @@
 
 ## Building Cordova App 
 ```
+# Clone repo
+git clone https://github.com/ChangoBuitrago/dashboard.git
+
 # Install dependencies
 npm install
 
