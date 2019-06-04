@@ -1,4 +1,4 @@
-# WWs Dashboard Demo
+# WWs Hybrid App Dashboard Demo
 
 ## Prerequisites
 ```
