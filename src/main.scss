@@ -20,10 +20,17 @@
 
   --ion-tabbar-text-color-active: var(--ion-color-secondary);
   --ion-tabbar-text-color: var(--ion-color-secondary-contrast);
+
+  --ion-toolbar-background: var(--ion-color-primary);
+  --ion-toolbar-border-color: var(--ion-color-primary);
+  --ion-toolbar-color: var(--ion-color-primary-contrast);
 }
 
 .icon-color-primary {
   color: var(--ion-color-primary);
+}
+.icon-color-primary-contrast {
+  color: var(--ion-color-primary-contrast);
 }
 .icon-color-secondary {
   color: var(--ion-color-secondary);

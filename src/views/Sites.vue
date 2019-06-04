@@ -5,14 +5,16 @@
       <ion-toolbar>
         <ion-title>{{ getHeaderTitle }}</ion-title>
         <ion-button fill="clear" @click="hideModal" routerDirection="root">
-          <font-awesome-icon slot="start" icon="chevron-left" class="fa-fw"/>
+          <font-awesome-icon slot="start" icon="chevron-left" class="fa-fw icon-color-primary-contrast"/>
         </ion-button>
       </ion-toolbar>  
-      <ion-segment @ionChange="segmentChanged($event)" v-bind:value="getSelectedSegment._id" class="ion-padding">
-        <ion-segment-button v-for="(segment, key) in getSegmentList" :key="key" :value="segment._id">
-          <ion-label>{{segment.label | capitalize}}</ion-label>
-        </ion-segment-button>
-      </ion-segment>
+      <ion-toolbar style="--background:var(--ion-color-primary-contrast);" class="--padding-top">
+        <ion-segment @ionChange="segmentChanged($event)" v-bind:value="getSelectedSegment._id">
+          <ion-segment-button v-for="(segment, key) in getSegmentList" :key="key" :value="segment._id">
+            <ion-label>{{segment.label | capitalize}}</ion-label>
+          </ion-segment-button>
+        </ion-segment>
+      </ion-toolbar>
     </ion-header>
 
     <ion-content>
