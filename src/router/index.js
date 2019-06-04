@@ -10,6 +10,10 @@ export default new IonicVueRouter({
   base: process.env.BASE_URL,
   routes: [
     {
+      path: '*',
+      redirect: 'home'
+    },
+    {
       path: '/',
       name: 'home',
       component: Home

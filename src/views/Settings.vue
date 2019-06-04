@@ -5,7 +5,7 @@
       <ion-toolbar>
         <ion-title>{{ locale.title }}</ion-title>
         <ion-button fill="clear" @click="hideModal" routerDirection="root">
-          <font-awesome-icon slot="start" icon="chevron-left" class="fa-fw"/>
+          <font-awesome-icon slot="start" icon="chevron-left" class="fa-fw icon-color-primary-contrast"/>
         </ion-button>
       </ion-toolbar>  
     </ion-header>
