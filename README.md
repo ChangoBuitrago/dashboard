@@ -1,5 +1,13 @@
 # WWs Dashboard Demo
 
+## Prerequisites
+```
+# Cordova CLI
+sudo npm install -g cordova
+
+# iOS simulator (Optional, normally installed with Xcode)  
+sudo npm install -g ios-sim
+```
 
 ## Building Cordova App 
 ```
@@ -18,8 +26,11 @@ npm run build
 
 ## Running Cordova App 
 ```
-# App distribution directory
+# Access App distribution directory
 cd cordovaApp
+
+# Adding iOS platform support
+cordova platform add ios
 
 # on a iPhone-8-Plus
 cordova emulate ios --target="iPhone-8-Plus, 11.2"
