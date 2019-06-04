@@ -6,6 +6,9 @@
 # Clone repo
 git clone https://github.com/ChangoBuitrago/dashboard.git
 
+# Access App directory
+cd dashboard
+
 # Install dependencies
 npm install
 
