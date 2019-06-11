@@ -38,7 +38,7 @@
         <ion-row>
           <ion-col size="12" size-lg>
             <ion-label>
-              <h2 class="ion-padding-start ion-padding-top">What does your Aggregated Consumption look like?</h2>
+              <h2 class="ion-padding-start ion-padding-top">What does your Aggregated Consumption looks like?</h2>
             </ion-label>
             <ion-card>
               <ion-card-content>
@@ -75,7 +75,7 @@
         <ion-row>
           <ion-col size="12" size-lg>
             <ion-label>
-              <h2 class="ion-padding-start ion-padding-top">Which Switches are Active now?</h2>
+              <h2 class="ion-padding-start ion-padding-top">Which Switches are now Active?</h2>
             </ion-label>
             <ion-card>
               <ion-card-content>
