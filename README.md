@@ -39,7 +39,7 @@ cordova emulate ios --target="iPhone-8-Plus, 11.2"
 cordova emulate ios --target="iPad-Air-2, 11.2"
 ```
 
-## List available iOS Simulators 
+## List available iOS simulators 
 ```
 cordova emulate ios --list
 ```
