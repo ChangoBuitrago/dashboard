@@ -22,8 +22,8 @@
           <font-awesome-icon slot="start" color="light" icon="building" class="fa-fw icon-color-secondary"/>
           <ion-label color="light">
             <!-- {{locale.sites}} -->
-            <h2>Wattwatchers HQ</h2> 
-            <p>Master View</p>
+            <h2>{{ site.name || "Wattwatchers HQ" }}</h2> 
+            <p>{{ view.name || " Master View" }}</p>
           </ion-label>
         </ion-item>
 
@@ -100,6 +100,7 @@
 <script>
 import Sites from "@/views/Sites.vue";
 import Settings from "@/views/Settings.vue";
+import { mapGetters } from 'vuex'
 
 export default {
   name: 'SideMenu',
@@ -116,7 +117,11 @@ export default {
         helpCenter: this.$t('app.sideMenu.helpCenter'),
         about: this.$t('app.sideMenu.about')
       }
-    }
+    },
+    ...mapGetters({
+      'site':'siteModule/getSelectedSite',
+      'view':'viewModule/getSelectedView',
+    })
   },
   methods: {
     gotoPath(_path){

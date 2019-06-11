@@ -3,13 +3,16 @@ import i18n from '@/i18n'
 
 // initial state
 const state = {
-  sites: []
+  sites: [],
+  selected: {}
 }
 
 // getters
 const getters = {
   getHeaderTitle: () => i18n.t('app.sites.title'),
   getSiteList: (state) => state.sites,
+  getSelectedSite: (state) => 
+    state.selected
 }
 
 // actions
@@ -19,6 +22,9 @@ const actions = {
       commit('setSites', sites)
     })
   },
+  setSelectedSite: ({ commit }, siteId) => {
+    commit('setSelectedSite', siteId )
+  },
 }
 
 // mutations
@@ -26,6 +32,9 @@ const mutations = {
   setSites: (state, sites) => {
     state.sites = sites
   },
+  setSelectedSite: (state, siteId) => {
+    state.selected = state.sites.find(({ _id }) => _id === siteId)
+  }
 }
 
 export default {

@@ -19,7 +19,7 @@
             </ion-label>
           </ion-item-divider>
 
-          <ion-item button lines="none" detail="false" @click="onSelectedView($event, view._id)" routerDirection="root"
+          <ion-item button lines="none" detail="false" @click="onSelectedView($event, view)" routerDirection="root"
             v-for="view in views(site._id)" :key="view._id"
           >
             <font-awesome-icon slot="start" :icon="['fas', 'layer-group']" class="fa-fw"/>
@@ -104,11 +104,14 @@ export default {
 
       this.$store.dispatch("viewModule/addViewToFavourite", viewId)
     },
-    onSelectedView(evt, viewId){
+    onSelectedView(evt, view){
       
-      // { dispatch view selection action. }
+      this.$store.dispatch("viewModule/setSelectedView", view._id).then(() => {
+        this.$store.dispatch("siteModule/setSelectedSite", view.siteId).then(() => {
 
-      this.$parent.hideModal()
+          this.$parent.hideModal()
+        })
+      })
     },
     doRefresh(evt) {
       this.loading = true
