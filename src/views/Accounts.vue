@@ -20,7 +20,7 @@
       <ion-list>
         <ion-item>
           <ion-avatar slot="start">
-            <img src="/GlennBeames.jpeg">
+            <img src="GlennBeames.jpeg">
           </ion-avatar>
           <ion-label>
             <h2>glennbeames@gmail.com</h2>
@@ -31,7 +31,7 @@
 
         <ion-item>
           <ion-avatar slot="start">
-            <img src="/GlennBeamesWWs.jpg">
+            <img src="GlennBeamesWWs.jpg">
           </ion-avatar>
           <ion-label>
             <h2>glenn@wattwatchers.com.au</h2>

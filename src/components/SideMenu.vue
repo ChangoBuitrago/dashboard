@@ -6,7 +6,7 @@
       <ion-card>
         <ion-item lines="none" style="padding-top:15px;padding-left:5px;">
           <ion-avatar slot="start">
-            <img src="/GlennBeames.jpeg">
+            <img src="GlennBeames.jpeg">
           </ion-avatar>
           <ion-button shape="round" fill="outline" slot="end" size="small" color="secondary" @click="showModalAccounts" class="button-shape-round">
             <font-awesome-icon icon="ellipsis-h" class="fa-fw-8 icon-color-secondary"/>
