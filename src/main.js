@@ -11,7 +11,7 @@ import {
   faBuilding, faHome, faTachometerAlt, faBolt, faInfoCircle, 
   faCog, faMicrochip, faToggleOn, faBookmark, faStopwatch, 
   faChevronLeft, faLayerGroup, faStar, faSolarPanel, faExchangeAlt,
-  faEllipsisH, faFileAlt, faPlus } from '@fortawesome/free-solid-svg-icons'
+  faEllipsisH, faFileAlt, faPlus, faSnowplow } from '@fortawesome/free-solid-svg-icons'
 import { 
   faBookmark as faBookmarkRegular, faStar as faStarRegular } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -23,7 +23,7 @@ library.add(faBuilding, faHome,
   faTachometerAlt, faBolt, faInfoCircle, faCog, 
   faMicrochip, faToggleOn, faBookmark, faBookmarkRegular, faStopwatch, 
   faChevronLeft, faLayerGroup, faStar, faStarRegular, faSolarPanel, faExchangeAlt,
-  faEllipsisH, faFileAlt, faPlus,  )
+  faEllipsisH, faFileAlt, faPlus, faSnowplow)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

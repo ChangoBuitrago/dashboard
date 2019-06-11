@@ -29,5 +29,10 @@ export default new IonicVueRouter({
       name: 'settings',
       component: () => import(/* webpackChunkName: "settings" */ '@/views/Settings.vue')
     },
+    {
+      path: '/coming-soon',
+      name: 'coming-soon',
+      component: () => import(/* webpackChunkName: "coming-soon" */ '@/views/ComingSoon.vue')
+    }
   ]
 })

@@ -11,7 +11,7 @@ sudo npm install -g ios-sim
 
 ## Building Cordova App 
 ```
-# Clone repo
+# Clone repository
 git clone https://github.com/ChangoBuitrago/dashboard.git
 
 # Access App directory
@@ -20,7 +20,7 @@ cd dashboard
 # Install dependencies
 npm install
 
-# Building App
+# Build App
 npm run build
 ```
 

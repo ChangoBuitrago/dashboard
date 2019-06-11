@@ -56,20 +56,20 @@
             <ion-list-header>
               <ion-label>Reports</ion-label>
             </ion-list-header>
-            <ion-item button lines="none" detail="false" @click="gotoPath('/realtime')" routerDirection="root">
+            <ion-item button lines="none" detail="false" @click="gotoPath('/coming-soon')" routerDirection="root">
               <font-awesome-icon slot="start" icon="stopwatch" class="fa-fw icon-color-secondary"/>
               <ion-label>
                 {{locale.realTime}}
               </ion-label>
             </ion-item>
-            <ion-item button lines="none" detail="false" @click="gotoPath('/realtime')" routerDirection="root">
+            <ion-item button lines="none" detail="false" @click="gotoPath('/coming-soon')" routerDirection="root">
               <font-awesome-icon slot="start" icon="solar-panel" class="fa-fw icon-color-secondary"/>
               <ion-label>
                 Solar Production
                 <!-- {{locale.realTime}} -->
               </ion-label>
             </ion-item>
-            <ion-item button lines="none" detail="false" @click="gotoPath('/realtime')" routerDirection="root">
+            <ion-item button lines="none" detail="false" @click="gotoPath('/coming-soon')" routerDirection="root">
               <font-awesome-icon slot="start" icon="exchange-alt" class="fa-fw icon-color-secondary"/>
               <ion-label>
                 Demand Response
@@ -83,7 +83,7 @@
                 {{locale.settings}}
               </ion-label>
             </ion-item>
-            <ion-item button lines="none" detail="false" routerDirection="root">
+            <ion-item button lines="none" detail="false" href="https://wattwatchers.com.au/support/" routerDirection="root">
               <ion-label>
                 {{locale.helpCenter}}
               </ion-label>
