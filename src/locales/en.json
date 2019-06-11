@@ -11,6 +11,9 @@
       "helpCenter": "Help Center",
       "about": "About"
     },
+    "accounts": {
+      "title": "Accounts"
+    },
     "sites": {
       "title": "Select View",
       "segment": {

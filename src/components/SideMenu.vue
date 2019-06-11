@@ -8,7 +8,7 @@
           <ion-avatar slot="start">
             <img src="/GlennBeames.jpeg">
           </ion-avatar>
-          <ion-button shape="round" fill="outline" slot="end" size="small" color="secondary" @click="gotoPath('/')" class="button-shape-round">
+          <ion-button shape="round" fill="outline" slot="end" size="small" color="secondary" @click="showModalAccounts" class="button-shape-round">
             <font-awesome-icon icon="ellipsis-h" class="fa-fw-8 icon-color-secondary"/>
           </ion-button>  
         </ion-item>
@@ -100,6 +100,7 @@
 <script>
 import Sites from "@/views/Sites.vue";
 import Settings from "@/views/Settings.vue";
+import Accounts from "@/views/Accounts.vue";
 import { mapGetters } from 'vuex'
 
 export default {
@@ -146,6 +147,16 @@ export default {
         },
         cssClass:"fullScreenModal",
         showBackdrop: false
+      });
+      await modal.present();
+    },
+    showModalAccounts: async function() {
+      const modal = await this.$ionic.modalController.create({
+        component: Accounts,
+        componentProps: {
+          parent: this
+        },
+        cssClass:"halfScreenModal",
       });
       await modal.present();
     }

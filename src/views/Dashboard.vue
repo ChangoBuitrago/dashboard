@@ -13,7 +13,7 @@
         </ion-buttons>
         <ion-title>{{ locale.title }}</ion-title>
         <ion-buttons slot="end">
-          <ion-button fill="clear" routerDirection="root">
+          <ion-button fill="clear" color="light" routerDirection="root">
             <font-awesome-icon icon="plus" class="fa-fw"/>
           </ion-button>
         </ion-buttons>
