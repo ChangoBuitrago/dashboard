@@ -22,8 +22,8 @@
           <font-awesome-icon slot="start" color="light" icon="building" class="fa-fw icon-color-secondary"/>
           <ion-label color="light">
             <!-- {{locale.sites}} -->
-            <h2>Wattwatchers Office</h2> 
-            <p>All Views Data</p>
+            <h2>Wattwatchers HQ</h2> 
+            <p>Master View</p>
           </ion-label>
         </ion-item>
 
