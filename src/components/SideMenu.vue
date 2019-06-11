@@ -4,18 +4,18 @@
     <ion-header>
       
       <ion-card>
-        <ion-item lines="none" style="padding-top:10px;padding-left:5px;">
+        <ion-item lines="none" style="padding-top:15px;padding-left:5px;">
           <ion-avatar slot="start">
-            <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            <img src="/GlennBeames.jpeg">
           </ion-avatar>
-          <ion-button fill="outline" slot="end" size="small" color="secondary" @click="gotoPath('/')">
-            <font-awesome-icon icon="ellipsis-h" class="fa-fw icon-color-secondary"/>
+          <ion-button shape="round" fill="outline" slot="end" size="small" color="secondary" @click="gotoPath('/')" class="button-shape-round">
+            <font-awesome-icon icon="ellipsis-h" class="fa-fw-8 icon-color-secondary"/>
           </ion-button>  
         </ion-item>
 
         <ion-card-header>
-          <ion-card-subtitle>John Doe</ion-card-subtitle>
-          <ion-card-title>Installer</ion-card-title>
+          <ion-card-subtitle>Glenn Beames</ion-card-subtitle>
+          <ion-card-title>Electrician</ion-card-title>
         </ion-card-header>
 
         <ion-item button lines="none" color="primary" @click="showModalSites" routerDirection="root">
@@ -147,3 +147,17 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+
+  ion-avatar {
+    height: 40px;
+    width: 40px;
+  }
+
+  .button-shape-round {
+    --border-radius:100%;
+    min-height:60%;
+  }
+
+</style>
